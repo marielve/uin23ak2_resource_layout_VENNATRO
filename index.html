@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESSURSARKIV</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ressursarkiv</h1>
+         </header>
+    <div>
+
+<nav>
+     <a onclick="renderList('HTML')"class="button">HTML</a>
+     <a onclick="renderList('CSS')"class="button">CSS</a>
+     <a onclick="renderList('JavaScript')"class="button">JAVASCRIPT</a>
+     <a onclick="renderList('React')"class="button">REACT</a>
+     <a onclick="renderList('Sanity and headless CMS')"class="button">SANITY OG HEADLESS CMS</a>
+</nav>
+<main>
+    <article>
+        <h2 id="TittelVisning"></h2>
+        <p id="TittelTekst"></p>
+            <ul  id="ListeVisning">
+                
+            </ul>
+    </article>
+</main>
+<script src="ressurser.js"></script>
+</body>
+</html>

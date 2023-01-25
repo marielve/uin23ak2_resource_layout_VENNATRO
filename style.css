@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@400;600;700&display=swap');
+
+
+:root {
+
+    --aqua: #43e5ea;
+    --white: #FFFFFF;
+    --darkgray: #6f6f6f; 
+    --gray: #c4c4c4;
+    --lightgray: #f1f1f1;
+    --maxwidth: 1200px;
+    --rootsize: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--rootsize);
+}
+
+div.container {
+     width: 100%;
+     max-width: var(--maxwidth);
+     margin: 0 auto;
+     padding-top: 3rem;
+}
+
+header {
+    display: flex;
+    background: var(--white);
+    text-transform: uppercase;
+    color: var(--darkgray);
+    padding: 1rem 1rem 1rem 2rem;
+    border-bottom: .1rem solid var(--gray);
+    border-top: .1rem solid var(--gray);
+    border-left: .1rem solid var(--gray);
+    border-right: .1rem solid var(--gray);
+}
+
+main{
+    display: flex;
+    background: var(--white);
+    padding-bottom: 4rem;
+    
+    border-bottom: .1rem solid var(--gray);
+    border-top: .5rem solid var(--aqua);
+    border-left: .1rem solid var(--gray);
+    border-right: .1rem solid var(--gray);
+}
+
+main, h2 {
+    padding-left: 1rem;
+    color: var(--darkgray);
+    font-size:larger;
+}
+
+p{
+    padding-left: 1rem;  
+}
+
+nav {
+    background: var(--white);
+    padding: 1rem 0rem 1rem 0rem;
+    padding-top: 3rem;
+
+}
+
+nav a{
+    color: var(--darkgray);
+    background: var(--lightgray);
+    text-decoration: none;
+    padding: 1rem;
+    border-top: .1rem solid var(--gray);
+    border-left: .1rem solid var(--gray);
+    border-right: .1rem solid var(--gray);
+}
+
+
+nav a:hover {
+    color: var(--white);
+    background: var(--aqua);
+    border-top: .1rem solid var(--aqua);
+    border-left: .1rem solid var(--aqua);
+    border-right: .1rem solid var(--aqua);
+}
+
+li a:link{
+    color: var(--aqua);
+}
+
+li a:visited {
+    color: rgb(0, 158, 173);
+}

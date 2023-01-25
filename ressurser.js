@@ -93,4 +93,34 @@ const resources = [
             },
         ]
     },
-]
+   
+]   
+
+
+function renderList(categoryName){
+    let categoryTitle = ""
+    let categoryText = ""
+    let listHTML = ""
+    
+    
+    resources.map(resource => {
+        if(resource.category === categoryName) {
+            categoryTitle += "<h2>" + resource.category + "</h2>"
+            categoryText += "<p>" + resource.text + "</p>"
+            
+            
+        }
+
+        resource.sources.map(links => {
+        if(resource.category === categoryName) {
+            listHTML += '<li><a href = "' + links.url + '">' + links.title + '</a></li>'
+     } })
+    })
+    
+
+    document.getElementById("TittelTekst").innerHTML = categoryText
+    document.getElementById("TittelVisning").innerHTML = categoryTitle
+    document.getElementById("ListeVisning").innerHTML = listHTML
+}
+
+
